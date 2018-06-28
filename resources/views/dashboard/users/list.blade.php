@@ -46,7 +46,7 @@
                         <thead>
                         <tr>
                             <th class="text-center">Name</th>
-                            <th class="text-center">Phone</th>
+                            <th class="text-center">Email</th>
                             <th class="text-center">Role</th>
                             <th class="text-center">Actions</th>
 
@@ -59,7 +59,7 @@
                             <tr>
 
                                 <td class="text-center">{{$model->name}}</td>
-                                <td class="text-center">{{$model->phone}}</td>
+                                <td class="text-center">{{$model->email}}</td>
                                 <td class="text-center">
                                     <span
                                             @if($model->role === "admin")

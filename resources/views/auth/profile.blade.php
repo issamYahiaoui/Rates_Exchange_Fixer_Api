@@ -37,10 +37,10 @@
                             <label for="" class="col-sm-3 text-right control-label col-form-label">Phone</label>
 
                             <div class="col-md-5">
-                                <input  type="text" class="form-control{{ $errors->has('phone') ? ' is-invalid' : '' }}"   placeholder="" name="phone" value="{{$model->phone}}" required> </div>
-                            @if ($errors->has('phone'))
+                                <input  type="text" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"   placeholder="" name="email" value="{{$model->email}}" required> </div>
+                            @if ($errors->has('email'))
                                 <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('phone') }}</strong>
+                                        <strong>{{ $errors->first('email') }}</strong>
                                     </span>
                             @endif
                         </div>

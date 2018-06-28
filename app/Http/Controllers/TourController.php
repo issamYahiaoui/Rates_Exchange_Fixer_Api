@@ -158,7 +158,6 @@ class TourController extends Controller
 
         ];
 
-        $this->validate($request, $rules);
 
         $agent = Agent::find($request->get('agent_id')) ;
 

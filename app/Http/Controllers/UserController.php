@@ -149,7 +149,7 @@ class UserController extends Controller
 
         //update a nationality
         $rules = [
-            'phone' => 'required',
+            'email' => 'required',
 
         ];
 
@@ -157,7 +157,7 @@ class UserController extends Controller
 
         $user = Auth::user();
         $user->name = $request->get('name');
-        $user->phone = $request->get('phone');
+        $user->email = $request->get('email');
         $user->password = bcrypt($request->get('password'));
 
       $user->save() ;
