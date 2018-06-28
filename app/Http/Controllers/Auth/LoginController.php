@@ -26,7 +26,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/tours';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -43,14 +43,14 @@ class LoginController extends Controller
     public function login(Request $request)
     {
         $this->validate($request, [
-            'phone' => ['required'],
+            'email' => ['required'],
             'password' => ['required']
         ]);
 
 
         // Set up the login attempt
         $credentials = [
-            'phone' => $request->input('phone'),
+            'email' => $request->input('email'),
             'password' => $request->input('password'),
 
         ];
