@@ -18,14 +18,12 @@ Auth::routes();
 
 
 
+Route::resource('rates', 'RateController');
 
 Route::resource('users', 'UserController');
 Route::put('me', 'UserController@updateProfile');
 
 Route::get('me', 'UserController@show');
-
-
-
 
 
 Route::get('*', function() {

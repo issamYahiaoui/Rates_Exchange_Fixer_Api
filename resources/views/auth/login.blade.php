@@ -49,7 +49,7 @@
                     <div class="form-group ">
                         <div class="col-xs-12">
                             <input  type="text" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"  placeholder="Email" name="email" value="{{ old('email') }}" required> </div>
-                        @if ($errors->has('phone'))
+                        @if ($errors->has('email'))
                             <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('email') }}</strong>
                                     </span>
